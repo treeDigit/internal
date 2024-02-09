@@ -2,13 +2,13 @@ import { Col, Row, Input, Form, Table, Typography, Popconfirm } from 'antd'
 import { LeftOutlined } from '@ant-design/icons'
 import React, { useState } from 'react'
 import { Router, useRouter } from 'next/router'
-import MySummary from '@/components/Performance/MySummary'
-import MyReportee from '@/components/Performance/MyReportee'
-import Appraisal from '@/components/Performance/Appraisal'
+// import MySummary from '@/components/Performance/MySummary'
+//import MyReportee from '@/components/Performance/MyReportee'
+//import Appraisal from '@/components/Performance/Appraisal'
 import TreeLogo from '../public/Assests/Dashboard/logo.svg'
 import Image from 'next/image'
 
-const overview = () => {
+const Performance = () => {
   const router = useRouter()
 
   const [activeTab, setActiveTab] = useState(1)
@@ -63,7 +63,7 @@ const overview = () => {
 
       {activeTab == 1 && (
         <div>
-          <Appraisal />
+         
         </div>
       )}
       {/* {activeTab == 2 && (
@@ -73,11 +73,10 @@ const overview = () => {
       )} */}
       {activeTab == 3 && (
         <div>
-          <MyReportee />
         </div>
       )}
     </div>
   )
 }
 
-export default overview
+export default Performance
