@@ -1,0 +1,40 @@
+{
+  "name": "dashboard-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^40.2.0",
+    "@ckeditor/ckeditor5-react": "^6.2.0",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@fullcalendar/react": "^6.1.10",
+    "@mui/material": "^5.15.4",
+    "antd": "^5.11.0",
+    "axios": "^1.6.2",
+    "bcryptjs": "^2.4.3",
+    "fullcalendar": "^6.1.10",
+    "moment": "^2.29.4",
+    "mongodb": "^6.3.0",
+    "next": "14.0.1",
+    "next-auth": "^4.24.5",
+    "rc-resize-observer": "^1.4.0",
+    "rc-textarea": "^1.6.3",
+    "react": "^18",
+    "react-big-calendar": "^1.8.5",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^18",
+    "react-number-format": "^5.3.1",
+    "sass": "^1.69.5"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.0.1"
+  }
+}
