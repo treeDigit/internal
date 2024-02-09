@@ -120,15 +120,15 @@ const Dashboard = () => {
 
 export async function getServerSideProps(context) {
   const session = await getSession({ req: context.req })
-
-  if (!session) {
-    return {
-      redirect: {
-        destination: '/login',
-        permanent: false,
-      },
-    }
-  }
+  console.log(session)
+  // if (!session) {
+  //   return {
+  //     redirect: {
+  //       destination: '/login',
+  //       permanent: false,
+  //     },
+  //   }
+  // }
 
   return {
     props: { session },

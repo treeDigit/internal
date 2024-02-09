@@ -43,6 +43,7 @@ const login = () => {
 
     if (!result.error) {
       // set some auth state
+      console.log(result);
       router.push('/dashboard')
     }
   }
