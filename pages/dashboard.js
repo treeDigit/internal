@@ -120,7 +120,8 @@ const Dashboard = () => {
 
 export async function getServerSideProps(context) {
   const session = await getSession({ req: context.req })
-  console.log(session)
+  console.log(session,process.env.NODE_ENV,process.env.NEXTAUTH_SECRET)
+  
   // if (!session) {
   //   return {
   //     redirect: {
