@@ -119,17 +119,15 @@ const Dashboard = () => {
 }
 
 export async function getServerSideProps(context) {
-  const session = await getSession({ req: context.req }).catch(e=>console.log(e))
-  console.log(session,process.env.NODE_ENV,process.env.NEXTAUTH_SECRET)
-  
-  // if (!session) {
-  //   return {
-  //     redirect: {
-  //       destination: '/login',
-  //       permanent: false,
-  //     },
-  //   }
-  // }
+  const session = await getSession({ req: context.req })
+  if (!session) {
+    return {
+      redirect: {
+        destination: '/login',
+        permanent: false,
+      },
+    }
+  }
 
   return {
     props: { session },
