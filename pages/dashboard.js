@@ -119,7 +119,7 @@ const Dashboard = () => {
 }
 
 export async function getServerSideProps(context) {
-  const session = await getSession({ req: context.req })
+  const session = await getSession({ req: context.req }).catch(e=>console.log(e))
   console.log(session,process.env.NODE_ENV,process.env.NEXTAUTH_SECRET)
   
   // if (!session) {
